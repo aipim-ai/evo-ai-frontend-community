@@ -760,5 +760,115 @@
       "deleteSuccess": "Note supprimée",
       "deleteError": "Erreur lors de la suppression de la note"
     }
+  },
+  "history": {
+    "composer": {
+      "placeholder": "Que s’est-il passé avec ce contact aujourd’hui ?",
+      "publish": "Publier",
+      "publishOn": "Publier le {{date}}",
+      "type": "Type d’entrée",
+      "date": "Date"
+    },
+    "types": {
+      "call": "Appel",
+      "message": "Message",
+      "meeting": "Réunion",
+      "email": "E-mail",
+      "note": "Note",
+      "taskDone": "Tâche terminée"
+    },
+    "followUp": {
+      "toggle": "Planifier l’étape suivante",
+      "titlePlaceholder": "Étape suivante, ex. Envoyer la proposition révisée",
+      "due": "Échéance"
+    },
+    "feed": {
+      "title": "Historique",
+      "filter": "Filtrer par type",
+      "all": "Tous les types",
+      "today": "Aujourd’hui",
+      "yesterday": "Hier",
+      "emptyToday": "Rien d’enregistré aujourd’hui.",
+      "empty": "Aucun enregistrement pour ce filtre.",
+      "logThisDay": "Enregistrer ce jour-là",
+      "records_one": "{{count}} entrée",
+      "records_other": "{{count}} entrées",
+      "earlier": "Plus ancien",
+      "expandAll": "Tout déplier",
+      "collapseAll": "Replier les anciens"
+    },
+    "entry": {
+      "meta": "{{author}} · {{time}}",
+      "completed": "Terminé : {{title}}"
+    },
+    "tasks": {
+      "title": "Tâches",
+      "new": "Nouvelle tâche",
+      "titlePlaceholder": "Titre de la tâche",
+      "schedule": "Planifier",
+      "empty": "Aucune tâche ouverte.",
+      "overdue": "En retard · {{date}}",
+      "complete": "Terminer : {{title}}",
+      "needsDeal": "Ajoutez ce contact à un pipeline pour planifier des tâches."
+    },
+    "actions": {
+      "cancel": "Annuler",
+      "retry": "Réessayer",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "save": "Enregistrer"
+    },
+    "messages": {
+      "published": "Publié",
+      "publishedWithTask": "Publié et étape suivante planifiée",
+      "taskScheduled": "Tâche planifiée",
+      "taskCompleted": "Tâche terminée et ajoutée à aujourd’hui",
+      "updated": "Entrée mise à jour",
+      "deleted": "Entrée supprimée",
+      "error": "Une erreur est survenue. Veuillez réessayer.",
+      "loadError": "Impossible de charger l’historique."
+    },
+    "loading": "Chargement de l’historique..."
+  },
+  "priority": {
+    "how": "Ordre de priorité : tâches en retard, puis messages sans réponse et tâches du jour, puis affaires sans contact depuis 7 jours ou plus.",
+    "sort": {
+      "label": "Trier",
+      "priority": "Priorité",
+      "recent": "Dernier contact",
+      "name": "Nom (A–Z)"
+    },
+    "filters": {
+      "all": "Tous",
+      "label": "Filtrer par priorité"
+    },
+    "empty": "Aucun contact trouvé.",
+    "columns": {
+      "contact": "Contact",
+      "why": "Pourquoi maintenant",
+      "stage": "Étape"
+    },
+    "groups": {
+      "overdue": "En retard",
+      "today": "Aujourd’hui",
+      "cooling": "En train de refroidir",
+      "ok": "À jour"
+    },
+    "reasons": {
+      "overdue": "{{task}} · échue {{ago}}",
+      "awaiting": "Message sans réponse · {{ago}}",
+      "dueToday": "{{task}} · aujourd’hui à {{time}}",
+      "cooling": "Dernier contact {{ago}}",
+      "next": "Prochaine : {{task}} · {{date}}",
+      "none": "Rien en attente",
+      "coolingNever": "Aucun contact enregistré"
+    },
+    "loadError": "Impossible de charger la liste par priorité.",
+    "loadMore": "Charger plus",
+    "view": {
+      "label": "Affichage",
+      "priority": "Priorité",
+      "all": "Tous les contacts"
+    }
   }
 }
