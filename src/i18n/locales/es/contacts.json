@@ -760,5 +760,115 @@
       "deleteSuccess": "Nota eliminada",
       "deleteError": "Error al eliminar la nota"
     }
+  },
+  "history": {
+    "composer": {
+      "placeholder": "¿Qué pasó hoy con este contacto?",
+      "publish": "Publicar",
+      "publishOn": "Publicar el {{date}}",
+      "type": "Tipo de registro",
+      "date": "Fecha"
+    },
+    "types": {
+      "call": "Llamada",
+      "message": "Mensaje",
+      "meeting": "Reunión",
+      "email": "Correo",
+      "note": "Nota",
+      "taskDone": "Tarea completada"
+    },
+    "followUp": {
+      "toggle": "Programar siguiente paso",
+      "titlePlaceholder": "Siguiente paso, p. ej. Enviar propuesta revisada",
+      "due": "Fecha límite"
+    },
+    "feed": {
+      "title": "Historial",
+      "filter": "Filtrar por tipo",
+      "all": "Todos los tipos",
+      "today": "Hoy",
+      "yesterday": "Ayer",
+      "emptyToday": "Todavía no hay registros hoy.",
+      "empty": "No hay registros para este filtro.",
+      "logThisDay": "Registrar en este día",
+      "records_one": "{{count}} registro",
+      "records_other": "{{count}} registros",
+      "earlier": "Anteriores",
+      "expandAll": "Expandir todo",
+      "collapseAll": "Contraer anteriores"
+    },
+    "entry": {
+      "meta": "{{author}} · {{time}}",
+      "completed": "Completó: {{title}}"
+    },
+    "tasks": {
+      "title": "Tareas",
+      "new": "Nueva tarea",
+      "titlePlaceholder": "Título de la tarea",
+      "schedule": "Programar",
+      "empty": "No hay tareas abiertas.",
+      "overdue": "Vencida · {{date}}",
+      "complete": "Completar: {{title}}",
+      "needsDeal": "Agrega este contacto a un pipeline para programar tareas."
+    },
+    "actions": {
+      "cancel": "Cancelar",
+      "retry": "Reintentar",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "save": "Guardar"
+    },
+    "messages": {
+      "published": "Publicado",
+      "publishedWithTask": "Publicado y siguiente paso programado",
+      "taskScheduled": "Tarea programada",
+      "taskCompleted": "Tarea completada y añadida a hoy",
+      "updated": "Registro actualizado",
+      "deleted": "Registro eliminado",
+      "error": "Algo salió mal. Inténtalo de nuevo.",
+      "loadError": "No se pudo cargar el historial."
+    },
+    "loading": "Cargando historial..."
+  },
+  "priority": {
+    "how": "Orden de prioridad: tareas atrasadas, luego mensajes sin responder y tareas de hoy, luego negociaciones sin contacto desde hace 7 días o más.",
+    "sort": {
+      "label": "Ordenar",
+      "priority": "Prioridad",
+      "recent": "Último contacto",
+      "name": "Nombre (A–Z)"
+    },
+    "filters": {
+      "all": "Todos",
+      "label": "Filtrar por prioridad"
+    },
+    "empty": "No se encontraron contactos.",
+    "columns": {
+      "contact": "Contacto",
+      "why": "Por qué ahora",
+      "stage": "Etapa"
+    },
+    "groups": {
+      "overdue": "Atrasados",
+      "today": "Para hoy",
+      "cooling": "Enfriándose",
+      "ok": "Al día"
+    },
+    "reasons": {
+      "overdue": "{{task}} · venció {{ago}}",
+      "awaiting": "Mensaje sin responder · {{ago}}",
+      "dueToday": "{{task}} · hoy a las {{time}}",
+      "cooling": "Último contacto {{ago}}",
+      "next": "Próxima: {{task}} · {{date}}",
+      "none": "Sin pendientes",
+      "coolingNever": "Aún no hay contacto registrado"
+    },
+    "loadError": "No se pudo cargar la lista por prioridad.",
+    "loadMore": "Cargar más",
+    "view": {
+      "label": "Vista",
+      "priority": "Prioridad",
+      "all": "Todos los contactos"
+    }
   }
 }

@@ -768,5 +768,115 @@
       "deleteSuccess": "Nota eliminada",
       "deleteError": "Erro ao eliminar nota"
     }
+  },
+  "history": {
+    "composer": {
+      "placeholder": "O que aconteceu com este contacto hoje?",
+      "publish": "Publicar",
+      "publishOn": "Publicar em {{date}}",
+      "type": "Tipo de registo",
+      "date": "Data"
+    },
+    "types": {
+      "call": "Chamada",
+      "message": "Mensagem",
+      "meeting": "Reunião",
+      "email": "E-mail",
+      "note": "Nota",
+      "taskDone": "Tarefa concluída"
+    },
+    "followUp": {
+      "toggle": "Agendar próximo passo",
+      "titlePlaceholder": "Próximo passo, ex.: Enviar proposta revista",
+      "due": "Data limite"
+    },
+    "feed": {
+      "title": "Histórico",
+      "filter": "Filtrar por tipo",
+      "all": "Todos os tipos",
+      "today": "Hoje",
+      "yesterday": "Ontem",
+      "emptyToday": "Ainda nada registado hoje.",
+      "empty": "Nenhum registo para este filtro.",
+      "logThisDay": "Registar neste dia",
+      "records_one": "{{count}} registo",
+      "records_other": "{{count}} registos",
+      "earlier": "Anteriores",
+      "expandAll": "Expandir todos",
+      "collapseAll": "Recolher anteriores"
+    },
+    "entry": {
+      "meta": "{{author}} · {{time}}",
+      "completed": "Concluiu: {{title}}"
+    },
+    "tasks": {
+      "title": "Tarefas",
+      "new": "Nova tarefa",
+      "titlePlaceholder": "Título da tarefa",
+      "schedule": "Agendar",
+      "empty": "Sem tarefas em aberto.",
+      "overdue": "Em atraso · {{date}}",
+      "complete": "Concluir: {{title}}",
+      "needsDeal": "Adicione este contacto a um pipeline para agendar tarefas."
+    },
+    "actions": {
+      "cancel": "Cancelar",
+      "retry": "Tentar novamente",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "save": "Guardar"
+    },
+    "messages": {
+      "published": "Publicado",
+      "publishedWithTask": "Publicado e próximo passo agendado",
+      "taskScheduled": "Tarefa agendada",
+      "taskCompleted": "Tarefa concluída e adicionada a hoje",
+      "updated": "Registo atualizado",
+      "deleted": "Registo eliminado",
+      "error": "Algo correu mal. Tente novamente.",
+      "loadError": "Não foi possível carregar o histórico."
+    },
+    "loading": "A carregar histórico..."
+  },
+  "priority": {
+    "how": "Ordem de prioridade: tarefas em atraso, depois mensagens sem resposta e tarefas de hoje, depois negócios sem contacto há 7 dias ou mais.",
+    "sort": {
+      "label": "Ordenar",
+      "priority": "Prioridade",
+      "recent": "Último contacto",
+      "name": "Nome (A–Z)"
+    },
+    "filters": {
+      "all": "Todos",
+      "label": "Filtrar por prioridade"
+    },
+    "empty": "Nenhum contacto encontrado.",
+    "columns": {
+      "contact": "Contacto",
+      "why": "Porquê agora",
+      "stage": "Etapa"
+    },
+    "groups": {
+      "overdue": "Em atraso",
+      "today": "Para hoje",
+      "cooling": "A arrefecer",
+      "ok": "Em dia"
+    },
+    "reasons": {
+      "overdue": "{{task}} · venceu {{ago}}",
+      "awaiting": "Mensagem sem resposta · {{ago}}",
+      "dueToday": "{{task}} · hoje às {{time}}",
+      "cooling": "Último contacto {{ago}}",
+      "next": "Próxima: {{task}} · {{date}}",
+      "none": "Sem pendências",
+      "coolingNever": "Ainda sem contacto registado"
+    },
+    "loadError": "Não foi possível carregar a lista por prioridade.",
+    "loadMore": "Carregar mais",
+    "view": {
+      "label": "Vista",
+      "priority": "Prioridade",
+      "all": "Todos os contactos"
+    }
   }
 }

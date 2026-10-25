@@ -31,6 +31,9 @@ import ContactsFilterPopover from '@/components/contacts/ContactsFilterPopover';
 import ContactImportModal from '@/components/contacts/ContactImportModal';
 import ContactExportModal from '@/components/contacts/ContactExportModal';
 import ContactMergeModal from '@/components/contacts/ContactMergeModal';
+import ContactsViewToggle from '@/components/contacts/ContactsViewToggle';
+import { readStoredView, storeView, type ContactsView } from '@/components/contacts/contactsView';
+import PriorityContactList from '@/components/contacts/priority/PriorityContactList';
 import { AxiosError } from 'axios';
 import { ContactsTour } from '@/tours';
 
@@ -95,6 +98,15 @@ export default function Contacts() {
   const [exportModalOpen, setExportModalOpen] = useState(false);
   const [mergeModalOpen, setMergeModalOpen] = useState(false);
   const [contactsToMerge, setContactsToMerge] = useState<Contact[]>([]);
+  const [view, setView] = useState<ContactsView>(readStoredView);
+  const [prioritySearch, setPrioritySearch] = useState('');
+  const [priorityTotal, setPriorityTotal] = useState(0);
+  const isPriorityView = view === 'priority';
+
+  const changeView = (next: ContactsView) => {
+    setView(next);
+    storeView(next);
+  };
 
   // /contacts/new is the only route-derived form mode left — editing an EXISTING
   // contact now happens inline inside ContactDetailsCard (view <-> edit toggle in
@@ -833,10 +845,10 @@ export default function Contacts() {
         <>
           <div data-tour="contacts-header">
           <ContactsHeader
-            totalCount={state.meta.pagination.total}
-            selectedCount={state.selectedContactIds.length}
-            searchValue={state.searchQuery}
-            onSearchChange={handleSearchChange}
+            totalCount={isPriorityView ? priorityTotal : state.meta.pagination.total}
+            selectedCount={isPriorityView ? 0 : state.selectedContactIds.length}
+            searchValue={isPriorityView ? prioritySearch : state.searchQuery}
+            onSearchChange={isPriorityView ? setPrioritySearch : handleSearchChange}
             onNewContact={handleCreateContact}
             onImport={handleImportContacts}
             onExport={handleExportContacts}
@@ -849,8 +861,10 @@ export default function Contacts() {
           />
           </div>
 
-          {/* Filter Popover trigger */}
-          <div className="flex items-center justify-end mt-3 mb-2 sm:mt-6 sm:mb-3">
+          {/* View toggle + filter popover trigger */}
+          <div className="flex items-center justify-between gap-2 mt-3 mb-2 sm:mt-6 sm:mb-3">
+            <ContactsViewToggle value={view} onChange={changeView} />
+            {!isPriorityView && (
             <ContactsFilterPopover
               open={filterModalOpen}
               onOpenChange={setFilterModalOpen}
@@ -860,8 +874,15 @@ export default function Contacts() {
               onClearFilters={handleClearFilters}
               activeFiltersCount={activeFilters.length}
             />
+            )}
           </div>
 
+          {isPriorityView ? (
+            <div className="flex-1 overflow-hidden">
+              <PriorityContactList search={prioritySearch} onTotalChange={setPriorityTotal} />
+            </div>
+          ) : (
+          <>
           {/* Content */}
           <div className="flex-1 overflow-auto" data-tour="contacts-list">
             {state.loading.list ? (
@@ -930,6 +951,8 @@ export default function Contacts() {
                 loading={state.loading.list}
               />
             </div>
+          )}
+          </>
           )}
         </>
       )}

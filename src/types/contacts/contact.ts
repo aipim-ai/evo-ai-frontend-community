@@ -1,5 +1,6 @@
 import type { PaginationMeta, StandardResponse, PaginatedResponse } from '@/types/core';
 import type { Channel } from '@/types/channels';
+import type { HistoryKind } from './history';
 
 export interface ContactableInboxes {
   id: string;
@@ -152,6 +153,8 @@ export interface Contact {
 export interface ContactNote {
   id: string;
   content: string;
+  kind?: HistoryKind;
+  occurred_at?: string;
   user: {
     id: string;
     name: string;

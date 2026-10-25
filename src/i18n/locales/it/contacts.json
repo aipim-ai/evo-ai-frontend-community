@@ -760,5 +760,115 @@
       "deleteSuccess": "Nota eliminata",
       "deleteError": "Errore durante l'eliminazione della nota"
     }
+  },
+  "history": {
+    "composer": {
+      "placeholder": "Cosa è successo oggi con questo contatto?",
+      "publish": "Pubblica",
+      "publishOn": "Pubblica il {{date}}",
+      "type": "Tipo di voce",
+      "date": "Data"
+    },
+    "types": {
+      "call": "Chiamata",
+      "message": "Messaggio",
+      "meeting": "Riunione",
+      "email": "E-mail",
+      "note": "Nota",
+      "taskDone": "Attività completata"
+    },
+    "followUp": {
+      "toggle": "Pianifica il prossimo passo",
+      "titlePlaceholder": "Prossimo passo, es. Inviare proposta rivista",
+      "due": "Scadenza"
+    },
+    "feed": {
+      "title": "Cronologia",
+      "filter": "Filtra per tipo",
+      "all": "Tutti i tipi",
+      "today": "Oggi",
+      "yesterday": "Ieri",
+      "emptyToday": "Ancora nulla registrato oggi.",
+      "empty": "Nessun record per questo filtro.",
+      "logThisDay": "Registra in questo giorno",
+      "records_one": "{{count}} registrazione",
+      "records_other": "{{count}} registrazioni",
+      "earlier": "Precedenti",
+      "expandAll": "Espandi tutto",
+      "collapseAll": "Comprimi precedenti"
+    },
+    "entry": {
+      "meta": "{{author}} · {{time}}",
+      "completed": "Completata: {{title}}"
+    },
+    "tasks": {
+      "title": "Attività",
+      "new": "Nuova attività",
+      "titlePlaceholder": "Titolo dell’attività",
+      "schedule": "Pianifica",
+      "empty": "Nessuna attività aperta.",
+      "overdue": "In ritardo · {{date}}",
+      "complete": "Completa: {{title}}",
+      "needsDeal": "Aggiungi questo contatto a una pipeline per pianificare attività."
+    },
+    "actions": {
+      "cancel": "Annulla",
+      "retry": "Riprova",
+      "edit": "Modifica",
+      "delete": "Elimina",
+      "save": "Salva"
+    },
+    "messages": {
+      "published": "Pubblicato",
+      "publishedWithTask": "Pubblicato e prossimo passo pianificato",
+      "taskScheduled": "Attività pianificata",
+      "taskCompleted": "Attività completata e aggiunta a oggi",
+      "updated": "Voce aggiornata",
+      "deleted": "Voce eliminata",
+      "error": "Qualcosa è andato storto. Riprova.",
+      "loadError": "Impossibile caricare la cronologia."
+    },
+    "loading": "Caricamento cronologia..."
+  },
+  "priority": {
+    "how": "Ordine di priorità: attività in ritardo, poi messaggi senza risposta e attività di oggi, poi trattative senza contatto da 7 giorni o più.",
+    "sort": {
+      "label": "Ordina",
+      "priority": "Priorità",
+      "recent": "Ultimo contatto",
+      "name": "Nome (A–Z)"
+    },
+    "filters": {
+      "all": "Tutti",
+      "label": "Filtra per priorità"
+    },
+    "empty": "Nessun contatto trovato.",
+    "columns": {
+      "contact": "Contatto",
+      "why": "Perché ora",
+      "stage": "Fase"
+    },
+    "groups": {
+      "overdue": "In ritardo",
+      "today": "Per oggi",
+      "cooling": "Si stanno raffreddando",
+      "ok": "In regola"
+    },
+    "reasons": {
+      "overdue": "{{task}} · scaduta {{ago}}",
+      "awaiting": "Messaggio senza risposta · {{ago}}",
+      "dueToday": "{{task}} · oggi alle {{time}}",
+      "cooling": "Ultimo contatto {{ago}}",
+      "next": "Prossima: {{task}} · {{date}}",
+      "none": "Nessuna attività in sospeso",
+      "coolingNever": "Nessun contatto registrato"
+    },
+    "loadError": "Impossibile caricare l’elenco per priorità.",
+    "loadMore": "Carica altri",
+    "view": {
+      "label": "Vista",
+      "priority": "Priorità",
+      "all": "Tutti i contatti"
+    }
   }
 }

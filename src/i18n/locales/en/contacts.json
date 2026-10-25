@@ -768,5 +768,115 @@
       "deleteSuccess": "Note deleted",
       "deleteError": "Error deleting note"
     }
+  },
+  "history": {
+    "composer": {
+      "placeholder": "What happened with this contact today?",
+      "publish": "Publish",
+      "publishOn": "Publish on {{date}}",
+      "type": "Entry type",
+      "date": "Date"
+    },
+    "types": {
+      "call": "Call",
+      "message": "Message",
+      "meeting": "Meeting",
+      "email": "Email",
+      "note": "Note",
+      "taskDone": "Task completed"
+    },
+    "followUp": {
+      "toggle": "Schedule next step",
+      "titlePlaceholder": "Next step, e.g. Send revised proposal",
+      "due": "Due date"
+    },
+    "feed": {
+      "title": "History",
+      "filter": "Filter by type",
+      "all": "All types",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "emptyToday": "Nothing logged today yet.",
+      "empty": "No records for this filter.",
+      "logThisDay": "Log on this day",
+      "records_one": "{{count}} record",
+      "records_other": "{{count}} records",
+      "earlier": "Earlier",
+      "expandAll": "Expand all",
+      "collapseAll": "Collapse earlier"
+    },
+    "entry": {
+      "meta": "{{author}} · {{time}}",
+      "completed": "Completed: {{title}}"
+    },
+    "tasks": {
+      "title": "Tasks",
+      "new": "New task",
+      "titlePlaceholder": "Task title",
+      "schedule": "Schedule",
+      "empty": "No open tasks.",
+      "overdue": "Overdue · {{date}}",
+      "complete": "Complete: {{title}}",
+      "needsDeal": "Add this contact to a pipeline to schedule tasks."
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "retry": "Try again",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save"
+    },
+    "messages": {
+      "published": "Published",
+      "publishedWithTask": "Published and next step scheduled",
+      "taskScheduled": "Task scheduled",
+      "taskCompleted": "Task completed and added to today",
+      "updated": "Entry updated",
+      "deleted": "Entry deleted",
+      "error": "Something went wrong. Please try again.",
+      "loadError": "Could not load the history."
+    },
+    "loading": "Loading history..."
+  },
+  "priority": {
+    "how": "Priority order: overdue tasks first, then unanswered messages and today’s tasks, then open deals with no contact for 7+ days.",
+    "sort": {
+      "label": "Sort",
+      "priority": "Priority",
+      "recent": "Last contact",
+      "name": "Name (A–Z)"
+    },
+    "filters": {
+      "all": "All",
+      "label": "Filter by priority"
+    },
+    "empty": "No contacts found.",
+    "columns": {
+      "contact": "Contact",
+      "why": "Why now",
+      "stage": "Stage"
+    },
+    "groups": {
+      "overdue": "Overdue",
+      "today": "Today",
+      "cooling": "Going cold",
+      "ok": "On track"
+    },
+    "reasons": {
+      "overdue": "{{task}} · due {{ago}}",
+      "awaiting": "Unanswered message · {{ago}}",
+      "dueToday": "{{task}} · today at {{time}}",
+      "cooling": "Last contact {{ago}}",
+      "next": "Next: {{task}} · {{date}}",
+      "none": "Nothing pending",
+      "coolingNever": "No contact logged yet"
+    },
+    "loadError": "Could not load the priority list.",
+    "loadMore": "Load more",
+    "view": {
+      "label": "View",
+      "priority": "Priority",
+      "all": "All contacts"
+    }
   }
 }
