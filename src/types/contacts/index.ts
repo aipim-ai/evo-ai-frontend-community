@@ -5,3 +5,4 @@
 export * from './contact';
 export * from './contactEvent';
 export * from './history';
+export * from './costs';

@@ -18,6 +18,7 @@
       "persons": "Persone",
       "pipeline": "Pipeline",
       "history": "Cronologia",
+      "costs": "Costi inviati",
       "notes": "Note",
       "attributes": "Attributi",
       "events": "Eventi"
@@ -870,5 +871,59 @@
       "priority": "Priorità",
       "all": "Tutti i contatti"
     }
+  },
+  "costs": {
+    "new": "Registra costo",
+    "loading": "Caricamento costi…",
+    "retry": "Riprova",
+    "empty": "Nessun costo inviato a questo cliente finora.",
+    "actions": "Azioni",
+    "delete": "Elimina costo",
+    "confirmDelete": "Eliminare?",
+    "summary": {
+      "count_one": "{{count}} costo inviato",
+      "count_other": "{{count}} costi inviati",
+      "products_one": "{{count}} prodotto",
+      "products_other": "{{count}} prodotti",
+      "lastSent": "ultimo invio il {{date}}"
+    },
+    "latest": {
+      "title": "Ultimo costo per prodotto",
+      "before": "prima {{price}}",
+      "legend": "In evidenza: inviati nell’ultima quotazione. “Prima” è il costo precedente dello stesso prodotto e confezione."
+    },
+    "log": {
+      "title": "Tutti i costi inviati",
+      "filter": "Filtra per prodotto",
+      "allProducts": "Tutti i prodotti"
+    },
+    "columns": {
+      "date": "Data",
+      "product": "Prodotto",
+      "color": "Colore",
+      "package": "Confezione",
+      "unit": "Unità",
+      "currency": "Valuta",
+      "price": "Costo",
+      "recipient": "Contatto",
+      "seller": "Venditore",
+      "notes": "Nota"
+    },
+    "form": {
+      "add": "Aggiungi",
+      "close": "Chiudi",
+      "pricePer": "Costo per {{unit}}"
+    },
+    "units": {
+      "un": "pz"
+    },
+    "historyEntry": "Costo inviato: {{code}}, {{package}}, {{price}}",
+    "messages": {
+      "created": "Costo registrato",
+      "deleted": "Costo eliminato",
+      "error": "Impossibile salvare. Riprova.",
+      "loadError": "Impossibile caricare i costi inviati."
+    },
+    "tab": "Costi inviati"
   }
 }

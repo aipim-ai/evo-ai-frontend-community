@@ -8,9 +8,10 @@ import ContactPipelineItem from '@/components/pipelines/ContactPipelineItem';
 import ContactEventsTab from './ContactEventsTab';
 import ContactEventsErrorBoundary from './ContactEventsErrorBoundary';
 import ContactHistoryTab from './history/ContactHistoryTab';
+import ContactCostsTab from './costs/ContactCostsTab';
 import type { Contact, ContactFormData } from '@/types/contacts';
 
-const TABS = ['details', 'history', 'events'] as const;
+const TABS = ['details', 'history', 'costs', 'events'] as const;
 type DetailTab = (typeof TABS)[number];
 
 interface ContactDetailPageProps {
@@ -96,6 +97,7 @@ export default function ContactDetailPage({
             <TabsList className="mb-4 w-full justify-start">
               <TabsTrigger value="details">{t('details.tabs.profile')}</TabsTrigger>
               <TabsTrigger value="history">{t('details.tabs.history')}</TabsTrigger>
+              <TabsTrigger value="costs">{t('details.tabs.costs')}</TabsTrigger>
               <TabsTrigger value="events">{t('details.tabs.events')}</TabsTrigger>
             </TabsList>
             <TabsContent value="details" className="mt-0">
@@ -109,6 +111,12 @@ export default function ContactDetailPage({
             </TabsContent>
             <TabsContent value="history" className="mt-0">
               <ContactHistoryTab contactId={contact.id} />
+            </TabsContent>
+            <TabsContent value="costs" className="mt-0">
+              <ContactCostsTab
+                contactId={contact.id}
+                recipient={contact.type === 'person' ? contact.name : undefined}
+              />
             </TabsContent>
             <TabsContent value="events" className="mt-0">
               <ContactEventsErrorBoundary
