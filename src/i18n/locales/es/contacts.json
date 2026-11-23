@@ -18,6 +18,7 @@
       "persons": "Personas",
       "pipeline": "Pipeline",
       "history": "Historial",
+      "costs": "Costos enviados",
       "notes": "Notas",
       "attributes": "Atributos",
       "events": "Eventos"
@@ -870,5 +871,59 @@
       "priority": "Prioridad",
       "all": "Todos los contactos"
     }
+  },
+  "costs": {
+    "new": "Registrar costo",
+    "loading": "Cargando costos…",
+    "retry": "Reintentar",
+    "empty": "Todavía no se enviaron costos a este cliente.",
+    "actions": "Acciones",
+    "delete": "Eliminar costo",
+    "confirmDelete": "¿Eliminar?",
+    "summary": {
+      "count_one": "{{count}} costo enviado",
+      "count_other": "{{count}} costos enviados",
+      "products_one": "{{count}} producto",
+      "products_other": "{{count}} productos",
+      "lastSent": "último envío el {{date}}"
+    },
+    "latest": {
+      "title": "Último costo por producto",
+      "before": "antes {{price}}",
+      "legend": "Resaltado: enviados en la última cotización. “Antes” es el costo anterior del mismo producto y envase."
+    },
+    "log": {
+      "title": "Todos los costos enviados",
+      "filter": "Filtrar por producto",
+      "allProducts": "Todos los productos"
+    },
+    "columns": {
+      "date": "Fecha",
+      "product": "Producto",
+      "color": "Color",
+      "package": "Envase",
+      "unit": "Unidad",
+      "currency": "Moneda",
+      "price": "Costo",
+      "recipient": "Contacto",
+      "seller": "Vendedor",
+      "notes": "Observación"
+    },
+    "form": {
+      "add": "Agregar",
+      "close": "Cerrar",
+      "pricePer": "Costo por {{unit}}"
+    },
+    "units": {
+      "un": "ud"
+    },
+    "historyEntry": "Costo enviado: {{code}}, {{package}}, {{price}}",
+    "messages": {
+      "created": "Costo registrado",
+      "deleted": "Costo eliminado",
+      "error": "No se pudo guardar. Inténtalo de nuevo.",
+      "loadError": "No se pudieron cargar los costos enviados."
+    },
+    "tab": "Costos enviados"
   }
 }

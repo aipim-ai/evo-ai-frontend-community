@@ -18,6 +18,7 @@
       "persons": "Personnes",
       "pipeline": "Pipeline",
       "history": "Historique",
+      "costs": "Coûts envoyés",
       "notes": "Notes",
       "attributes": "Attributs",
       "events": "Événements"
@@ -870,5 +871,59 @@
       "priority": "Priorité",
       "all": "Tous les contacts"
     }
+  },
+  "costs": {
+    "new": "Enregistrer un coût",
+    "loading": "Chargement des coûts…",
+    "retry": "Réessayer",
+    "empty": "Aucun coût envoyé à ce client pour le moment.",
+    "actions": "Actions",
+    "delete": "Supprimer le coût",
+    "confirmDelete": "Supprimer ?",
+    "summary": {
+      "count_one": "{{count}} coût envoyé",
+      "count_other": "{{count}} coûts envoyés",
+      "products_one": "{{count}} produit",
+      "products_other": "{{count}} produits",
+      "lastSent": "dernier envoi le {{date}}"
+    },
+    "latest": {
+      "title": "Dernier coût par produit",
+      "before": "avant {{price}}",
+      "legend": "En surbrillance : envoyés dans le dernier devis. « Avant » est le coût précédent du même produit et conditionnement."
+    },
+    "log": {
+      "title": "Tous les coûts envoyés",
+      "filter": "Filtrer par produit",
+      "allProducts": "Tous les produits"
+    },
+    "columns": {
+      "date": "Date",
+      "product": "Produit",
+      "color": "Couleur",
+      "package": "Conditionnement",
+      "unit": "Unité",
+      "currency": "Devise",
+      "price": "Coût",
+      "recipient": "Contact",
+      "seller": "Commercial",
+      "notes": "Remarque"
+    },
+    "form": {
+      "add": "Ajouter",
+      "close": "Fermer",
+      "pricePer": "Coût par {{unit}}"
+    },
+    "units": {
+      "un": "unité"
+    },
+    "historyEntry": "Coût envoyé : {{code}}, {{package}}, {{price}}",
+    "messages": {
+      "created": "Coût enregistré",
+      "deleted": "Coût supprimé",
+      "error": "Impossible d'enregistrer. Réessayez.",
+      "loadError": "Impossible de charger les coûts envoyés."
+    },
+    "tab": "Coûts envoyés"
   }
 }

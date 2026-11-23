@@ -18,6 +18,7 @@
       "persons": "Contacts",
       "pipeline": "Pipeline",
       "history": "History",
+      "costs": "Costs sent",
       "notes": "Notes",
       "attributes": "Attributes",
       "events": "Events"
@@ -878,5 +879,59 @@
       "priority": "Priority",
       "all": "All contacts"
     }
+  },
+  "costs": {
+    "new": "Log cost",
+    "loading": "Loading costs…",
+    "retry": "Try again",
+    "empty": "No costs sent to this customer yet.",
+    "actions": "Actions",
+    "delete": "Delete cost",
+    "confirmDelete": "Delete?",
+    "summary": {
+      "count_one": "{{count}} cost sent",
+      "count_other": "{{count}} costs sent",
+      "products_one": "{{count}} product",
+      "products_other": "{{count}} products",
+      "lastSent": "last sent {{date}}"
+    },
+    "latest": {
+      "title": "Latest cost by product",
+      "before": "before {{price}}",
+      "legend": "Highlighted: sent in the latest quote. “Before” is the previous cost for the same product and packaging."
+    },
+    "log": {
+      "title": "All costs sent",
+      "filter": "Filter by product",
+      "allProducts": "All products"
+    },
+    "columns": {
+      "date": "Date",
+      "product": "Product",
+      "color": "Color",
+      "package": "Packaging",
+      "unit": "Unit",
+      "currency": "Currency",
+      "price": "Cost",
+      "recipient": "Contact",
+      "seller": "Salesperson",
+      "notes": "Notes"
+    },
+    "form": {
+      "add": "Add",
+      "close": "Close",
+      "pricePer": "Cost per {{unit}}"
+    },
+    "units": {
+      "un": "unit"
+    },
+    "historyEntry": "Cost sent: {{code}}, {{package}}, {{price}}",
+    "messages": {
+      "created": "Cost logged",
+      "deleted": "Cost deleted",
+      "error": "Could not save. Try again.",
+      "loadError": "Could not load the costs sent."
+    },
+    "tab": "Costs sent"
   }
 }
